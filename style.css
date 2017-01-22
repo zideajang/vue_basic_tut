@@ -46,3 +46,25 @@ hr{
     margin: 0 auto;
     
 }
+.list{
+    width: 100%;
+}
+.list_title{
+    
+    font-weight: 600;
+}
+.center{
+    text-align: center;
+}
+
+.list_body ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+ul li{
+    min-height: 32px;
+    border-bottom:2px solid gray;
+    
+}

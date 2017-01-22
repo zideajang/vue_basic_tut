@@ -46,6 +46,31 @@
                     </div>
                 </div>
             </div>
+            <hr>
+            <div class="wraper">
+                <div class="demo">
+                    <button class="btn" v-on:click="show=!show">显示/隐藏(详细信息)</button>
+                    <p v-if="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla esse reprehenderit voluptas, eveniet eum nam itaque quidem perspiciatis voluptatibus maiores laboriosam laudantium unde ipsum animi omnis iusto dolores cupiditate. Accusamus!</p>
+                    <p v-else>简单信息</p>
+                </div>
+            </div>
+            <hr>
+            <div class="wraper">
+                <div class="demo">
+                    <div class="list">
+
+                    <div class="list_title center">员工列表</div>
+                    <div class="list_body">
+                        <ul>
+                            <li v-for="(employee, index) in employeelist">
+                                {{index}} - <span>{{employee.name}}</span>
+                                <span>{{employee.age}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="lessonOne/index.js"></script>
