@@ -21,10 +21,11 @@ form label{
     display: block;
     
 }
-form input[type='text']{
+form input[type='text'],.demo input[type='text']{
     width: 100%;
     min-height: 36px;
     font-size: 24px;
+    margin-bottom: 12px;
 }
 
 hr{

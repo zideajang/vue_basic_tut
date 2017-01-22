@@ -73,7 +73,34 @@
                 </div>
             </div>
             <div class="wraper">
+                <div class="demo">
+                    <div class="form-control">
+                        <input type="text" v-model="message">
+                        <button class="btn" role="button"@click="sendMsg">发送消息</button>
+                        <p>发送的消息:{{sMessage}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wraper">
+                <div class="demo">
+                    <div class="form-control">
+                        <input type="text" v-model="projectName">
+                        <button class="btn" @click="createProject">创建项目</button>
+                    </div>
+                    <hr>
+                    <div class="list">
 
+                    <div class="list_title center">项目列表</div>
+                    <div class="list_body">
+                        <ul>
+                            <li v-for="(project, index) in projects">
+                                {{index}} - <span>{{project.name}}</span>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
