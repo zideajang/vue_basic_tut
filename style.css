@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    font-family: "microsoft Yahei";
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.wraper{
+    width: 100%;
+}
+.wraper form{
+    width: 480px;
+    margin: 0 auto;
+}
+
+form label{
+    display: block;
+    
+}
+form input[type='text']{
+    width: 100%;
+    min-height: 36px;
+    font-size: 24px;
+}
+
+hr{
+    margin-bottom: 24px;
+}
+.btn{
+    -webkit-appearance: none;
+    width: 100%;
+    border: none;
+    text-align: center;
+    background: deepskyblue;
+    color:white;
+    height: 48px;
+    font-size: 18px;
+    line-height: 48px;
+}
+.demo{
+    width: 480px;
+    margin: 0 auto;
+    
+}

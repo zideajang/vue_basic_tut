@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <style>
         .blue{
@@ -35,11 +36,14 @@
             </form>
             <hr>
             <div class="wraper">
-                <button class="btn" v-on:click="attack">
-                    攻击
-                </button>
-                <div>
-                    <span>{{attackcount}}</span><span>{{magic}}</span>
+                <div class="demo">
+
+                    <button class="btn" v-on:click="attack">
+                        攻击
+                    </button>
+                    <div>
+                        攻击次数<span>{{attackcount}}</span>消耗法力:<span>{{magic}}</span>
+                    </div>
                 </div>
             </div>
         </div>
