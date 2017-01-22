@@ -63,13 +63,17 @@
                     <div class="list_body">
                         <ul>
                             <li v-for="(employee, index) in employeelist">
-                                {{index}} - <span>{{employee.name}}</span>
+                                {{index}} - <span>{{employee.name | depart}}</span>
                                 <span>{{employee.age}}</span>
+                                工资:<span>{{employee.salary | salaryFilter}}</span>
                             </li>
                         </ul>
                     </div>
                     </div>
                 </div>
+            </div>
+            <div class="wraper">
+
             </div>
         </div>
     </div>
